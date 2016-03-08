@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListaMedidas" >
+    
+    <TextView
+        android:id="@+id/barraseparadora"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/barranaranja"/>	
+	
+	 <TextView
+	    android:id="@+id/tituloInicio"
+	    android:layout_width="fill_parent"
+	    android:layout_height="30dp"
+	    android:layout_marginBottom="10dp"
+	    android:layout_marginLeft="55dp"
+	    android:layout_marginRight="55dp"
+	    android:layout_marginTop="20dp"
+	    android:background="@color/barratitulo"
+	    android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/Medidas"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:scrollbars="vertical" >
+
+      	<LinearLayout android:orientation="vertical"
+      		android:layout_width="fill_parent"
+      		android:layout_height="wrap_content">
+         	<TableLayout android:id="@+id/tablaMedidas"
+         		android:layout_width="fill_parent"
+       			android:layout_height="wrap_content"
+       			android:layout_gravity="center"
+       			android:stretchColumns="*">
+         </TableLayout>
+      </LinearLayout>
+   </ScrollView>
+
+</LinearLayout>

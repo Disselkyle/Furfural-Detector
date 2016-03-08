@@ -1,0 +1,67 @@
+<resources>
+
+    <string name="app_name">Furfural Detector</string>
+    <!-- Actividad Inicio (A) -->
+    <string name="labelInicio">Welcome to Furfural Detector!</string>
+    <string name="backButton">Back</string>
+    <string name="infoButton">Info</string>
+    <string name="botonStart">Start</string>
+    <string name="botonHistory">History</string>
+    
+    <!-- Actividad History (B) -->
+	<string name="labelHistory">History</string>
+	<string name="Calibrados">Calibrates</string>
+	<string name="Medidas">Measures</string>
+	
+	<!-- Actividad ListaCalibrados (C) -->
+	<string name="botonNuevoCalibrado">Add calibrate</string>
+	
+	<!-- Actividad VistaCalibrados (D) y VistaMedidas (F)-->
+	<string name="botonSelect">Select</string>
+	<string name="botonNuevaMedida">New Measure</string>
+	<string name="botonSave">Save</string>
+	<string name="botonDelete">Delete</string>
+	<string name="botonPDF">PDF</string>
+	<string name="datosCalibrado">RGB = a*[Furfural]+b
+a =
+b =
+r =
+Number of points = </string>
+
+	<string name="datosMedidas">User:
+Sample code:
+Calibrate:
+Furfural concentration:  µg/L</string>
+
+	<!-- Actividad InsertarSampleCode (G) -->
+	<string name="tituloStart">Start Measure</string>
+	<string name="textoSampleCode">Sample code</string>
+	<string name="textoMeasureUser">User</string>
+	
+	<!-- Actividad InsertarConcentracion (G) -->
+	<string name="textoConcentracion">Insert the concentration of the point</string>
+	<string name="botonContinue">Continue</string>
+	<string name="tituloCalibrate">Calibrate</string>
+	<string name="Inserted">Inserted values:</string>
+	<!-- Actividad InsertarNumeroPuntos (G) -->
+	<string name="textoNumeroPuntos">Number of points</string>
+	<string name="no_points_label">Insert the number of points please</string>
+	
+	<!-- Actividad About -->
+	<string name="about_title">About Furfural Detector</string>
+	<string name="closeBoton">X</string>
+	<string name="about_text">\<p>Aqui habra que poner un texto explicativo de en que consiste la aplicacion:
+	    -Que es el furfural
+	    -porque lo detectamos
+	    -los colores que usamos
+	    -la concentracion en funcion del color
+	    -etc
+	    -etc
+	    a ver que mas cosas pongo para ver como
+	    aumenta el tamaño de la pantalla</p></string>
+	    
+	<!-- AlertDialog seleccionar foto -->
+    <string name="title_TakeFoto">Select image</string>
+    <string name="selectFromGalery">From gallery</string>
+    <string name="selectFromCamera">From camera</string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    tools:context=".VistaMedidas">
+	
+    <TextView
+        android:id="@+id/barraseparadora"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/barranaranja"/>	
+	
+	 <TextView
+	    android:id="@+id/tituloInicio"
+	    android:layout_width="fill_parent"
+	    android:layout_height="30dp"
+	    android:layout_marginBottom="10dp"
+	    android:layout_marginLeft="55dp"
+	    android:layout_marginRight="55dp"
+	    android:layout_marginTop="20dp"
+	    android:background="@color/barratitulo"
+	    android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        tools:ignore="UseCompoundDrawables" >
+
+        <TextView
+            android:id="@+id/textoDatosMedida"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:text="@string/datosMedidas"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imagengRecorteFoto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp" 
+        android:layout_gravity="center">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:stretchColumns="*"
+            tools:ignore="UselessParent" >
+
+            <TableRow style=" ?android:attr/buttonBarStyle">
+
+                <Button
+                    android:id="@+id/botonNuevaMedida"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:background="@android:drawable/btn_default"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/botonNuevaMedida"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/botonSave"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:background="@android:drawable/btn_default"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/botonSave"
+                    android:textSize="16sp" />
+                
+                <Button
+                    android:id="@+id/botonDelete"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:background="@android:drawable/btn_default"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/botonDelete"
+                    android:textSize="16sp" />
+
+				<Button
+				    android:id="@+id/botonPDF"
+				    style="?android:attr/buttonBarButtonStyle"
+				    android:background="@android:drawable/btn_default"
+				    android:gravity="center_vertical|center_horizontal"
+				    android:text="@string/botonPDF"
+				    android:textSize="16sp" />
+                
+            </TableRow>
+
+            
+        </TableLayout>
+
+    </LinearLayout>
+</LinearLayout>
